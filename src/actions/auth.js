@@ -39,6 +39,7 @@ export const loadUser = () => async (dispatch) => {
 export const register =
     ({ name, email, password }) =>
     async (dispatch) => {
+        console.log("inside register action frontend");
         const config = {
             headers: {
                 "Content-Type": "application/json",
